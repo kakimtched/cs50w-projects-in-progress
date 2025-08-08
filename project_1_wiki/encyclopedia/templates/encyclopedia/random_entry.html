@@ -1,0 +1,12 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia - {{ random_entry }}
+{% endblock %}
+
+{% block body %}
+    {{ html_content | safe }}
+    
+    <a href="{% url 'edit' random_entry %}" class="btn btn-primary">Edit</a>
+
+{% endblock %}

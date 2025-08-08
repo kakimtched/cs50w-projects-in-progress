@@ -1,0 +1,17 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Categories</h2>
+    
+    <ul class="nav justify-content-center">
+
+        {% for category in categories %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'category' category.slug %}">{{ category.category_name }}</a>
+            </li>
+        {% endfor %}
+
+    </ul>
+
+
+{% endblock %}

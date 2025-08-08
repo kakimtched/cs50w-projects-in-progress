@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- TOP RIGHT -->
+    <div class="top-right">
+
+        <!-- LINK -->
+        <div class="link">
+            <a href="image.html">Image Search</a>
+            <a href="advanced.html">Advanced Search</a>
+        </div>
+    </div>
+
+    <!-- CENTER -->
+    <div class="center">
+
+        <!-- HEADER -->
+        <h1 id="header">Project-0</h1>
+
+        <!-- FORM -->
+        <div class="form">
+            <form action="https://www.google.com/search">
+                <!-- 
+                        The 'required' attribute prevents empty searches. 
+                        Making 'I'm Feeling Lucky' optional and avoiding warnings 
+                        ('Please fill in this field') would require JavaScript. 
+                    -->
+                <input type="text" name="q" required />
+                <input type="submit" value="Search" />
+                <input type="submit" name="btnI" value="I'm Feeling Lucky" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

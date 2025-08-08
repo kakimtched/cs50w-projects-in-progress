@@ -1,0 +1,15 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Your Watchlist</h2>
+
+    {% if listings %}
+ 
+        {% include 'auctions/listings_grid.html' %}
+
+    {% else %}
+        <p>You have no items in your watchlist.</p>
+    {% endif %}
+
+    
+{% endblock %}

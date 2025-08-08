@@ -1,0 +1,15 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Your Auction History</h2>
+
+    {% if listings %}
+    
+        {% include 'auctions/listings_grid.html' %}
+
+    {% else %}
+        <p>You have no items in your auction history.</p>
+    {% endif %}
+
+    
+{% endblock %}

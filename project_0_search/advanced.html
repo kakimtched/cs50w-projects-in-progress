@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- TOP RIGHT -->
+    <div class="top-right">
+
+        <!-- LINK -->
+        <div class="link">
+            <a href="index.html">Project-0</a>
+        </div>
+    </div>
+
+    <!-- TOP LEFT -->
+    <div class="top-left-advanced-page">
+
+        <!-- HEADER -->
+        <h1 id="header-advanced-page">Advanced Search</h1>
+        <hr id="black-line" />
+        <h1 id="header-find-pages">Find pages with...</h1>
+
+        <!-- FORM -->
+        <div class="form-advanced-search">
+            <form action="https://www.google.com/search">
+                <div>                                             <!-- Comparison of search fields and their operations: -->
+                    <p>all these words:</p>                       
+                    <input type="text" name="as_q" />             <!-- All these words: multiple membership checks combined with AND -->
+                </div>
+                <div>
+                    <p>this exact word or phrase:</p>
+                    <input type="text" name="as_epq" />           <!-- This exact word or phrase: single membership check (substring match) -->
+                </div>
+                <div>
+                    <p>any of these words:</p>
+                    <input type="text" name="as_oq" />            <!-- Any of these words: multiple membership checks combined with OR -->
+                </div>
+                <div>
+                    <p>none of these words:</p>
+                    <input type="text" name="as_eq" />            <!-- None of these words: multiple membership checks combined with NOT -->
+                </div>
+                <input type="submit" value="Advanced Search" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

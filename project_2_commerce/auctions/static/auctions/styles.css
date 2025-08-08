@@ -1,0 +1,149 @@
+:root {
+    --color-white: rgb(255, 255, 255);
+    --font-color: rgb(82, 76, 76);
+    --background-color: rgb(236, 236, 236);
+    --header-background: rgb(186, 169, 169);
+    --hover-background: rgb(0, 201, 184);
+    --box-shadow-color: 0 0 0 0.25rem rgba(0, 201, 184, 0.25);
+}
+
+body {
+    padding: 10px;
+    background-color: var(--background-color);
+}
+
+h1, .user-status {
+    color: var(--color-white);
+    background-color: var(--header-background);
+    text-align: center;
+    border-radius: 3px;
+}
+
+h2, p {
+    color: var(--font-color);
+}
+
+.nav-item, .nav-link {
+    color: var(--font-color);
+    font-size: 1.375rem;
+    margin: 11px 13px 0 13px;
+    padding: 0 30px 2px 30px;
+}
+
+.nav-link {
+    background-color: var(--color-white);
+    border-radius: 17px;
+    transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+.nav-link:hover {
+    color: var(--color-white);
+    background-color: var(--hover-background);
+}
+
+.register, .login {
+    color: var(--font-color);
+}
+
+.register a, .login a {
+    color: var(--hover-background);
+}
+
+.form-control:hover,
+.form-control:focus {
+    border-color: var(--hover-background);
+    box-shadow: var(--box-shadow-color);
+}
+
+.alert-danger {
+    background-color: var(--header-background);
+    color: var(--color-white);
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 13px;
+    margin-bottom: 22px;
+    padding: 10px;
+}
+
+.form-control, .alert-danger {
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.card-img-top {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  max-height: 400px;
+  object-fit: fill;
+  display: block;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.card-title {
+  margin-bottom: 2rem;
+}
+
+.btn-warning {
+    color: var(--font-color);
+}
+
+.btn-warning:hover {
+  background-color: var(--hover-background);
+  color: var(--color-white);
+  transition: background-color 0.1s ease, color 0.1s ease;
+  border-color: var(--hover-background);
+}
+
+.btn-danger {
+    background-color: var(--hover-background);
+    border: none;
+}
+.btn-danger:hover {
+    transition: background-color 0.1s ease, color 0.1s ease;
+    border: none;
+}
+
+.author-name {
+  font-style: italic;
+  color: #6c757d;
+  font-size: 0.7em;
+  margin-left: 7px;
+}
+
+.watchlist-badge {
+    margin-top: 3px;
+    color: var(--color-white)
+}
+
+.comment-time {
+    font-style: italic;
+}
+
+.comment-author {
+    font-size: 20px;
+    text-align: center;
+}
+
+.comments, .comment-time {
+    text-align: center;
+}
+
+.comments-box {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.comments-box h2 {
+  margin-top: 0;
+}
+
+h3, h5 {
+    color: var(--hover-background);
+}
+
+h5:hover, h3:hover {
+    color: #dc3545;
+}
